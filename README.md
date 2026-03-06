@@ -1,3 +1,3 @@
 # Curriculo Leticia 
 
-Esse site é um sie exemplo para aula
+Esse site é um site exemplo para aula
