@@ -6,67 +6,145 @@
 <title>Currículo Leticia</title>
 
 <style>
-body{
-    font-family: Arial, sans-serif;
-    background:#f5f5f5;
+
+*{
     margin:0;
     padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+    padding:40px 20px;
 }
 
 .container{
-    max-width:800px;
-    margin:40px auto;
+    max-width:900px;
+    margin:auto;
     background:white;
-    padding:30px;
-    border-radius:8px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    overflow:hidden;
 }
 
-h1{
-    margin-bottom:5px;
+/* CABEÇALHO */
+
+.header{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+.header h1{
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.header p{
+    font-size:14px;
+}
+
+/* CONTEUDO */
+
+.content{
+    padding:30px;
+}
+
+section{
+    margin-bottom:30px;
 }
 
 h2{
-    border-bottom:1px solid #ddd;
-    padding-bottom:5px;
-    margin-top:25px;
+    color:#444;
+    margin-bottom:10px;
+    border-left:5px solid #667eea;
+    padding-left:10px;
 }
 
 p{
-    color:#444;
+    color:#555;
+    line-height:1.6;
 }
 
 ul{
     padding-left:20px;
 }
 
-.info{
-    color:#666;
-    margin-bottom:20px;
+li{
+    margin-bottom:6px;
 }
-</style>
 
+/* CARDS */
+
+.card{
+    background:#f9f9f9;
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* INFO */
+
+.info{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    font-size:14px;
+    margin-top:10px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:600px){
+
+    .header h1{
+        font-size:24px;
+    }
+
+    .content{
+        padding:20px;
+    }
+
+}
+
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
+<div class="header">
 <h1>Leticia Freitas</h1>
+
 <div class="info">
-<p>Email: letikaaciaa@email.com</p>
-<p>GitHub: github.com/lelitikk</p>
-<p>Cidade: Rio branco - Acre</p>
+<span>📧 letikaaciaa@email.com</span>
+<span>💻 github.com/lelitikk</span>
+<span>📍 Rio Branco - Acre</span>
 </div>
 
-<h2>Resumo</h2>
+</div>
+
+<div class="content">
+
+<section>
+<h2>🧾 Resumo</h2>
+<div class="card">
 <p>
-Desenvolvedor web focado em criação de interfaces modernas e responsivas.
+Desenvolvedora web focada na criação de interfaces modernas e responsivas.
 Conhecimento em HTML, CSS e JavaScript, buscando oportunidades para
 desenvolver projetos e evoluir na área de programação web.
 </p>
+</div>
+</section>
 
-<h2>Habilidades</h2>
+<section>
+<h2>🧠 Habilidades</h2>
+<div class="card">
 <ul>
 <li>HTML</li>
 <li>CSS</li>
@@ -74,18 +152,29 @@ desenvolver projetos e evoluir na área de programação web.
 <li>Git / GitHub</li>
 <li>Design Responsivo</li>
 </ul>
+</div>
+</section>
 
-<h2>Projetos</h2>
+<section>
+<h2>🚀 Projetos</h2>
+<div class="card">
 <ul>
 <li>Site pessoal em HTML e CSS</li>
 <li>Landing page responsiva</li>
 <li>Projeto de lista de tarefas em JavaScript</li>
 </ul>
+</div>
+</section>
 
-<h2>Formação</h2>
-<p>Informatica para internet</p>
+<section>
+<h2>🎓 Formação</h2>
+<div class="card">
+<p>Informática para Internet</p>
 <p>Curso de Programação Web</p>
+</div>
+</section>
 
+</div>
 </div>
 
 </body>
