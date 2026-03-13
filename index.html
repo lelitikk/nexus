@@ -3,111 +3,129 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Currículo Leticia</title>
+<title>Currículo | Leticia Freitas</title>
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg,#667eea,#764ba2);
-    min-height:100vh;
-    padding:40px 20px;
+font-family: 'Segoe UI', Arial, sans-serif;
+background:#eef1f5;
+padding:40px 20px;
+color:#333;
 }
+
+/* CONTAINER */
 
 .container{
-    max-width:900px;
-    margin:auto;
-    background:white;
-    border-radius:12px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
-    overflow:hidden;
+max-width:1000px;
+margin:auto;
+display:grid;
+grid-template-columns:300px 1fr;
+background:white;
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+border-radius:10px;
+overflow:hidden;
 }
 
-/* CABEÇALHO */
+/* SIDEBAR */
 
-.header{
-    background:linear-gradient(135deg,#4facfe,#00f2fe);
-    color:white;
-    padding:30px;
-    text-align:center;
+.sidebar{
+background:#1f2937;
+color:white;
+padding:30px 25px;
 }
 
-.header h1{
-    font-size:32px;
-    margin-bottom:8px;
+.sidebar h1{
+font-size:26px;
+margin-bottom:10px;
 }
 
-.header p{
-    font-size:14px;
+.sidebar p{
+font-size:14px;
+color:#d1d5db;
+margin-bottom:25px;
 }
 
-/* CONTEUDO */
+.sidebar h3{
+margin-top:25px;
+margin-bottom:10px;
+font-size:16px;
+border-bottom:1px solid rgba(255,255,255,0.2);
+padding-bottom:5px;
+}
 
-.content{
-    padding:30px;
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar li{
+font-size:14px;
+margin-bottom:8px;
+}
+
+/* MAIN */
+
+.main{
+padding:35px;
 }
 
 section{
-    margin-bottom:30px;
+margin-bottom:30px;
 }
 
-h2{
-    color:#444;
-    margin-bottom:10px;
-    border-left:5px solid #667eea;
-    padding-left:10px;
+section h2{
+font-size:20px;
+margin-bottom:10px;
+color:#111827;
+border-left:4px solid #3b82f6;
+padding-left:10px;
 }
 
-p{
-    color:#555;
-    line-height:1.6;
+.card{
+background:#f8fafc;
+padding:18px;
+border-radius:8px;
+border:1px solid #e5e7eb;
+}
+
+.card p{
+line-height:1.6;
+margin-bottom:8px;
 }
 
 ul{
-    padding-left:20px;
+padding-left:18px;
 }
 
 li{
-    margin-bottom:6px;
+margin-bottom:6px;
 }
 
-/* CARDS */
+/* SKILLS */
 
-.card{
-    background:#f9f9f9;
-    padding:15px;
-    border-radius:8px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.05);
-}
-
-/* INFO */
-
-.info{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    font-size:14px;
-    margin-top:10px;
+.skills{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:8px;
 }
 
 /* RESPONSIVO */
 
-@media(max-width:600px){
+@media(max-width:800px){
 
-    .header h1{
-        font-size:24px;
-    }
+.container{
+grid-template-columns:1fr;
+}
 
-    .content{
-        padding:20px;
-    }
+.sidebar{
+text-align:center;
+}
 
 }
 
@@ -118,59 +136,102 @@ li{
 
 <div class="container">
 
-<div class="header">
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
 <h1>Leticia Freitas</h1>
+<p>Desenvolvedora Web</p>
 
-<div class="info">
-<span>📧 letikaaciaa@email.com</span>
-<span>💻 github.com/lelitikk</span>
-<span>📍 Rio Branco - Acre</span>
+<h3>Contato</h3>
+<ul>
+<li>📧 letikaaciaa@email.com</li>
+<li>💻 github.com/lelitikk</li>
+<li>📍 Rio Branco - Acre</li>
+</ul>
+
+<h3>Tecnologias</h3>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript</li>
+<li>Git & GitHub</li>
+</ul>
+
+<h3>Idiomas</h3>
+<ul>
+<li>Português — Nativo</li>
+<li>Inglês — Básico</li>
+</ul>
+
 </div>
 
-</div>
+<!-- CONTEÚDO -->
 
-<div class="content">
+<div class="main">
 
 <section>
-<h2>🧾 Resumo</h2>
+<h2>Resumo Profissional</h2>
 <div class="card">
 <p>
-Desenvolvedora web focada na criação de interfaces modernas e responsivas.
-Conhecimento em HTML, CSS e JavaScript, buscando oportunidades para
-desenvolver projetos e evoluir na área de programação web.
+Desenvolvedora web iniciante com foco na criação de interfaces modernas,
+responsivas e acessíveis. Possuo conhecimento em HTML, CSS e JavaScript,
+além de experiência na criação de projetos web e controle de versão com Git.
+</p>
+
+<p>
+Busco oportunidades para evoluir na área de desenvolvimento front-end,
+contribuindo com soluções criativas e aprendendo continuamente novas
+tecnologias.
 </p>
 </div>
 </section>
 
 <section>
-<h2>🧠 Habilidades</h2>
+<h2>Habilidades</h2>
+<div class="card skills">
+<span>✔ Desenvolvimento Web</span>
+<span>✔ Design Responsivo</span>
+<span>✔ Estruturação HTML</span>
+<span>✔ Estilização com CSS</span>
+<span>✔ Lógica com JavaScript</span>
+<span>✔ Versionamento com Git</span>
+</div>
+</section>
+
+<section>
+<h2>Projetos</h2>
 <div class="card">
 <ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>Git / GitHub</li>
-<li>Design Responsivo</li>
+<li>Site pessoal desenvolvido em HTML e CSS</li>
+<li>Landing page responsiva para prática de layout</li>
+<li>Aplicação de lista de tarefas em JavaScript</li>
+<li>Página de portfólio para apresentação de projetos</li>
 </ul>
 </div>
 </section>
 
 <section>
-<h2>🚀 Projetos</h2>
+<h2>Experiência</h2>
 <div class="card">
-<ul>
-<li>Site pessoal em HTML e CSS</li>
-<li>Landing page responsiva</li>
-<li>Projeto de lista de tarefas em JavaScript</li>
-</ul>
+<p>
+Atualmente em desenvolvimento de projetos pessoais voltados ao aprendizado
+de programação web, incluindo interfaces responsivas e aplicações simples
+utilizando JavaScript.
+</p>
 </div>
 </section>
 
 <section>
-<h2>🎓 Formação</h2>
+<h2>Formação</h2>
 <div class="card">
-<p>Informática para Internet</p>
-<p>Curso de Programação Web</p>
+<p><strong>Informática para Internet</strong></p>
+<p>Curso focado em fundamentos de desenvolvimento web.</p>
+
+<br>
+
+<p><strong>Programação Web</strong></p>
+<p>Estudos em HTML, CSS, JavaScript e práticas de desenvolvimento.</p>
 </div>
 </section>
 
